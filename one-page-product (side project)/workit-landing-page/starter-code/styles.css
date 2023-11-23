@@ -10,6 +10,7 @@ body{
     font-family: 'manrope';
     src: url(../starter-code/assets/fonts/manrope/static/Manrope-Regular.ttf);
 }
+
 nav > p{
     font-family: 'fraunces';
     font-size: 80px;
