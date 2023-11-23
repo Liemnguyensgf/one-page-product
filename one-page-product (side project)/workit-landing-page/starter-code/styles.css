@@ -1,25 +1,109 @@
 body{
-    padding: 2rem 5rem;
+    padding: 1rem 3rem;
     height: 100dvh;
+    overflow-x: hidden;
+}
+nav{
+    position: relative;
 }
 @font-face {
     font-family: 'fraunces';
-    src: url(../starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+    src: url(/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
 }
 @font-face {
     font-family: 'manrope';
-    src: url(../starter-code/assets/fonts/manrope/static/Manrope-Regular.ttf);
+    src: url(/assets/fonts/manrope/static/Manrope-Regular.ttf);
 }
-
-nav > p{
+header{
+    background-size: contain;
+}
+svg{
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+}
+.head-note{
     font-family: 'fraunces';
     font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 600;
+    width:50%;
+    
+}
+.head{
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+#home-page{
+    float: left;
+}
+#sign-up-page{
+    float:right;
+}
+#learn-more{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: #24053e;
+    background-color: #44ffa1;
+    border-color: #44ffa1;
+    font-weight: 700;
+    font-family: 'manrope';
+}
+#learn-more:hover{
+    background-color: #24053e;
+    color:#44ffa1;
+    border: 2px #44ffa1 solid;
+}
+#bg-pattern-1{
+    position: absolute;
+    right: 85%;
+    bottom: 45%;
+}
+#bg-pattern-2{
+    position: absolute;
+    left: 92%;
+}
+#hero{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 .container{
     display: flex;
+    overflow: hidden;
 }
-.head_note{
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3rem;
+    
+}
+.main-note{
     font-family: 'fraunces';
+    text-align: center;
     font-size: 32px;
+
+}
+.main-container p{
+    font-family: 'manrope';
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+
+}
+#founder{
+margin-top: 4rem;
 }
