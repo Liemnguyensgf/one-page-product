@@ -1,7 +1,7 @@
 body{
-    padding: 1rem 3rem;
     height: 100dvh;
     overflow-x: hidden;
+    margin: 0;
 }
 nav{
     position: relative;
@@ -20,11 +20,9 @@ nav{
 }
 header{
     background-size: contain;
-}
-svg{
-    position: absolute;
-    z-index: -1;
-    background-size: contain;
+    background-color: #24053e;
+    color: white;
+    padding-top: 2em;
 }
 .head-note{
     font-family: 'fraunces';
@@ -32,23 +30,41 @@ svg{
     line-height: 80px;
     text-align: center;
     font-weight: 600;
-    width:50%;
-    
+    width:30%;
 }
 .head{
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#home-page{
-    float: left;
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 }
-#sign-up-page{
-    float:right;
+#apply-link{
+    grid-column: 3/4;
+    justify-items: end;
+    font-family: 'manrope';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: lavender;
+    border-bottom: 3px solid #44ffa1;
+    margin-bottom: 0;
+    text-decoration: none;
+    
+}
+#apply-link:hover{
+    color: #44ffa1;
+    font-family: 'manrope';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
 }
 #learn-more{
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
+    padding: 1em 2em;
+    font-size: 18px;
     color: #24053e;
     background-color: #44ffa1;
     border: 4px #44ffa1 solid;
@@ -59,19 +75,24 @@ svg{
     background-color: #24053e;
     color:#44ffa1;
     border: 4px #44ffa1 solid;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'manrope';
 }
 #bg-pattern-1{
     position: absolute;
-    right: 85%;
-    bottom: 45%;
+    right: 90%;
+    bottom: 55%;
 }
 #bg-pattern-2{
     position: absolute;
-    left: 92%;
+    left: 94%;
 }
 #hero{
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 5em;
+}
+main{
+    background-color: #fcf8ff;
 }
 .main-container{
     display: flex;
