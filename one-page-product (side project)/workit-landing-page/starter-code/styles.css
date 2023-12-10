@@ -198,13 +198,13 @@ main{
     gap: 30px;
 }
 @media screen and (max-width: 768px) and (min-width: 375px){
-    html{
-        margin:0;
-        padding: 0;
-    }
     body{
-        margin:0;
-        padding: 0;
+        width: 100dvw;
+        overflow-x: hidden;
+    }
+    .container.head{
+        position: relative;
+        overflow-x: hidden;
     }
     .head-note{
         width: 80%;
@@ -215,6 +215,12 @@ main{
     }
     #bg-pattern-2{
         left: 90%;
+        overflow-x: auto;
+    }
+    #hero{
+        width: 476px;
+        height: 286px;
+        flex-shrink: 0;
     }
     .container.main{
         flex-direction: column;
@@ -227,13 +233,14 @@ main{
     }
     .number{
         margin-bottom: 0;
-        margin-right: 2em;
+        margin-left: 3em;
         width: 48px;
-        height: 45px;
+        height: 46px;
     }
     .main-note{
         font-size: 28px;
         text-align: left;
+        margin-left: 2em;
     }
     .container-note p{
         font-size: 16px;
