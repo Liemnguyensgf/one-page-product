@@ -30,7 +30,7 @@ header{
     line-height: 80px;
     text-align: center;
     font-weight: 600;
-    width:30%;
+    max-width:30%;
 }
 .head{
     flex-direction: column;
@@ -41,7 +41,6 @@ header{
 }
 nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
 }
@@ -117,6 +116,14 @@ main{
     border-radius: 90px;
     width: 56px;
     height: 56px;
+    text-align: center;
+    font-family: 'fraunces';
+    color: #24053e;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+
     
 }
 .main-note{
@@ -146,9 +153,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 730px;
+    max-width: 730px;
     padding: 0 4em;
-    height: 410px;
+    min-height: 410px;
 }
 .founder-note{
     background-color: #24053e;
@@ -189,9 +196,9 @@ main{
 }
 #bg-pattern-3{
     position: absolute;
-    right: 25%;
+    right: 15%;
     top: 70%;
-    z-index: -1;
+    z-index: 1;
 }
 .container.contact{
     padding-bottom: 4em;
@@ -204,9 +211,9 @@ main{
     align-items: center;
     gap: 30px;
 }
-@media screen and (max-width: 1024px) and (min-width: 768px){
+@media screen and (max-width: 768px) and (min-width: 441px){
     body{
-        width: 100dvw;
+        max-width: 100dvw;
         overflow-x: hidden;
     }
     .container.head{
@@ -263,8 +270,8 @@ main{
         text-align: left;
     }
     .container.founder-note{
-        width: 510px;
-        height: 375px;
+        max-width: 510px;
+        min-height: 375px;
         padding: 0 1em;
         overflow-x: hidden;
     }
@@ -299,35 +306,13 @@ main{
         border: 2px #44ffa1 solid;
     }
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:440px){
     #home-page{
-    width: 95.762px;
-    height: 24.608px;
-    flex-shrink: 0;
+        width: 95.762px;
+        height: 24.608px;
+        flex-shrink: 0;
     }
     #apply-link{
-    font-family: 'manrope';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.16px;
-    }
-    .head-note{
-        color: var(--White, #FFF);
-        text-align: center;
-        font-family: 'fraunces';
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 50px;
-        width: 100%;
-    }
-    #learn-more{
-        width: 133px;
-        height: 55px;
-        flex-shrink: 0;
-        text-align: center;
         font-family: 'manrope';
         font-size: 16px;
         font-style: normal;
@@ -335,9 +320,43 @@ main{
         line-height: 32px;
         letter-spacing: -0.16px;
     }
+    .head-note{
+        color: white;
+        text-align: center;
+        font-family: 'fraunces';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+    }
     #hero{
         width: 298.305px;
         height: 178.159px;
         flex-shrink: 0;
+    }
+    .container.main{
+        flex-direction: column;
+    }
+    .container.founder-note{
+        padding: 1em 0.5em;
+        max-width: 343px;
+        min-block-size: 375px;
+        align-items: center;
+        left: 1.5%;
+    }
+    #founder{
+        width: 265px;
+        height: 267px;
+    }
+    .head-of-founder-note{
+        font-size: 32px;
+        line-height: 28px;
+        text-align: center;
+        text-align: center;
+    }
+    .main-of-founder-note{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
     }
 }
