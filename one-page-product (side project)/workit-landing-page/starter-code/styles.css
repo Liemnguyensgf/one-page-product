@@ -1,3 +1,6 @@
+html{
+    min-width: 300px;
+}
 body{
     width:100dvw;
     height: 100dvh;
@@ -23,9 +26,10 @@ header{
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 1440 730' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H1440V662C1440 662 1082.96 730 722 730C361.039 730 0 662 0 662V0Z' fill='%2324053E'/%3E%3C/svg%3E")fixed;
     color: white;
     padding-top: 2em;
-    background-size: contain;
+    background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
 }
 .head-note{
@@ -34,7 +38,7 @@ header{
     line-height: 80px;
     text-align: center;
     font-weight: 600;
-    max-width:30%;
+    width: 50%;
 }
 .head{
     flex-direction: column;
@@ -146,27 +150,29 @@ main{
     position: relative;
     margin-top: 5em;
     justify-content: center;
+    align-items: center;
     overflow-x: hidden;
     height: 100vh;
 }
+.container.contain-founder{
+    position: relative;
+    margin: 1em;
+    width: 100%;
+}
 #founder{
-    position: absolute;
-    right: 55%;
-    top: 10px;
+    position: relative;
 }
 .container.founder-note{
     background-color: #24053e;
     color: white;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 700px;
+    width: 700px;
+    height: 413px;
     padding: 1.5em 3em;
-    min-height: 410px;
     margin-right: 5em;
-    top: 18%;
-    left: 40%;
 }
 .head-of-founder-note{
     font-family: 'fraunces';
@@ -218,7 +224,7 @@ footer{
     align-items: center;
     gap: 30px;
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 768px){
     body{
         overflow-x: hidden;
     }
@@ -227,7 +233,7 @@ footer{
         overflow-x: hidden;
     }
     .head-note{
-        width: 80%;
+        
     }
     #bg-pattern-1{
         right: 85%;
@@ -302,27 +308,24 @@ footer{
         border: 2px #44ffa1 solid;
     }
 }
-@media screen and (max-width:375px){ 
+@media screen and (max-width:490px){ 
     #home-page{
         width: 95.762px;
         height: 24.608px;
         flex-shrink: 0;
     }
     #apply-link{
-        font-family: 'manrope';
+        
         font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
         line-height: 32px;
         letter-spacing: -0.16px;
     }
+    #bg-pattern-1, #bg-pattern-2, #bg-pattern-3{
+        display: none;
+    }
     .head-note{
         color: white;
-        text-align: center;
-        font-family: 'fraunces';
         font-size: 50px;
-        font-style: normal;
-        font-weight: 600;
         line-height: 50px;
     }
     #hero{
@@ -344,6 +347,8 @@ footer{
         text-align: center;
     }
     .container.founder-note{
+        width: 700px;
+        height: 413px;
         align-items: center;
     }
     #founder{
